@@ -21,8 +21,8 @@ function Square:draw(canvas)
   originY = self.origin.y
 
   if self.center then
-    originX = originX - math.floor(size/2)
-    originY = originY - math.floor(size/2)
+    originX = originX - math.floor(self.size/2)
+    originY = originY - math.floor(self.size/2)
   end
 
   for x = 0, self.size do
