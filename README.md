@@ -1,7 +1,14 @@
 # OCEngine
 A library created for OpenComputers, a Minecraft mod that adds usable linux based computers running on LUA.
 
-To install this library to your device don't forget to add a Internet Card to your device. To install it run this command:
+To install the library to your device don't forget to add a Internet Card to your device. To install it run this command or create a .lua file containing [this](https://pastebin.com/cSx6Mqid) code.
 ```
-wget -fq "https://github.com/sidneydijkstra/OCEngine/blob/main/install.lua" run
+pastebin run cSx6Mqid
 ```
+
+To uninstall the library delete the /OCEngine folder inside the /lib folder. Or run this command.
+```
+/lib/OCEngine/uninstall.lua
+```
+
+Copyright (c) OCEngine. All Rights Reserved.
