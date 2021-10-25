@@ -52,6 +52,10 @@ Vec2.__tostring = function (v1)
   return string.format("%f, %f", v1.x, v1.y)
 end
 
+function Vec2:copy()
+  return Vec2.new(self.x, self.y)
+end
+
 function Vec2:print()
   print(string.format("%f, %f", self.x, self.y))
 end
