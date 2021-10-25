@@ -6,7 +6,7 @@ To install the library to your device don't forget to add a Internet Card to you
 pastebin run cSx6Mqid
 ```
 
-To uninstall the library delete the /OCEngine folder inside the /lib folder. Or run this command.
+To uninstall the library delete the /OCEngine folder inside the /lib folder and the ocengine.lua file in /bin. Or run this command.
 ```
 /lib/OCEngine/uninstall.lua
 ```

@@ -23,5 +23,9 @@ shell.execute('mkdir /lib/OCEngine')
 
 for i, file in ipairs(files) do
   print(string.format("[OCEngine] %d/%d Downloading file %s", i, #files, file))
-  shell.execute(string.format('wget -fq "https://raw.githubusercontent.com/sidneydijkstra/OCEngine/main/%s" "/lib/OCEngine/%s"', file, file))
+  shell.execute(string.format('wget -fq "https://raw.githubusercontent.com/sidneydijkstra/OCEngine/main/src/%s" "/lib/OCEngine/%s"', file, file))
 end
+
+
+print("[OCEngine] Downloading demo file ocengine.lua")
+shell.execute('wget -fq "https://raw.githubusercontent.com/sidneydijkstra/OCEngine/main/demo/ocengine.lua" "/bin/ocengine.lua"')
