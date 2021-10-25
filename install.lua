@@ -1,5 +1,6 @@
 local shell = require("shell")
 local filesystem = require("filesystem")
+local computer = require("computer")
 
 files = {
   "core.lua",
@@ -30,3 +31,5 @@ shell.execute('wget -fq "https://raw.githubusercontent.com/sidneydijkstra/OCEngi
 
 print("[OCEngine] Downloading demo file ocengine.lua")
 shell.execute('wget -fq "https://raw.githubusercontent.com/sidneydijkstra/OCEngine/main/demos/ocengine.lua" "/bin/ocengine.lua"')
+
+computer.shutdown(true)
