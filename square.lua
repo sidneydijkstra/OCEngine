@@ -1,5 +1,5 @@
-local object = require("object")
-local vec2 = require("vec2")
+local object = require("OCEngine/object")
+local vec2 = require("OCEngine/vec2")
 
 local Square = {}
 Square.__index = Square

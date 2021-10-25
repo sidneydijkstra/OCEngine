@@ -1,7 +1,7 @@
 local event = require("event")
 local keyboard = require("keyboard")
 
-local vec2 = require("vec2")
+local vec2 = require("OCEngine/vec2")
 
 local Input = {
   charlist = {},

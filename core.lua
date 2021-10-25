@@ -1,8 +1,8 @@
 local component = require("component")
 local event = require("event")
 
-local Input = require("input")
-local Canvas = require("canvas")
+local Input = require("OCEngine/input")
+local Canvas = require("OCEngine/canvas")
 
 local Core = {}
 Core.__index = Core

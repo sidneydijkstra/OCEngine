@@ -1,4 +1,4 @@
-local vec2 = require("vec2")
+local vec2 = require("OCEngine/vec2")
 
 local Object = {}
 Object.__index = Object
