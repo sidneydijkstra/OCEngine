@@ -8,9 +8,7 @@ files = {
   "vec2.lua",
   "timer.lua",
   "object.lua",
-  "square.lua",
-
-  "uninstall.lua"
+  "square.lua"
 }
 
 if filesystem.exists("/lib/OCEngine") then
@@ -27,5 +25,8 @@ for i, file in ipairs(files) do
 end
 
 
+print("[OCEngine] Downloading uninstall file uninstall.lua")
+shell.execute('wget -fq "https://raw.githubusercontent.com/sidneydijkstra/OCEngine/main/uninstall.lua" "/lib/OCEngine/uninstall.lua"')
+
 print("[OCEngine] Downloading demo file ocengine.lua")
-shell.execute('wget -fq "https://raw.githubusercontent.com/sidneydijkstra/OCEngine/main/demo/ocengine.lua" "/bin/ocengine.lua"')
+shell.execute('wget -fq "https://raw.githubusercontent.com/sidneydijkstra/OCEngine/main/demos/ocengine.lua" "/bin/ocengine.lua"')
