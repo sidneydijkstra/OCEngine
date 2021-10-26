@@ -45,7 +45,7 @@ repeat
    io.write("[OCEngine] Download demo snake game (y/n)? ")
    io.flush()
    answer=io.read()
-until answer=="y" or answer=="n"
+until (answer=="y" or answer=="n")
 
 if answer == "y" then
   shell.execute('mkdir /home/snake')
