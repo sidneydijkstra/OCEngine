@@ -7,5 +7,9 @@ if filesystem.exists("/lib/OCEngine") then
   shell.execute('rm -r /lib/OCEngine')
   shell.execute('rm /bin/ocengine.lua')
 
+  if filesystem.exists("/home/snake") then
+    shell.execute('rm -r /home/snake')
+  end
+
   computer.shutdown(true)
 end
