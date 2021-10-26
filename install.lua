@@ -35,7 +35,7 @@ shell.execute('wget -fq "https://raw.githubusercontent.com/sidneydijkstra/OCEngi
 -- Demo donwload!
 
 demos = {
-  "snake/game.lua",
+  "game.lua",
   "snake.lua",
   "blob.lua",
 }
