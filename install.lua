@@ -36,8 +36,8 @@ shell.execute('wget -fq "https://raw.githubusercontent.com/sidneydijkstra/OCEngi
 
 demos = {
   "snake/game.lua",
-  "snake/snake.lua",
-  "snake/blob.lua",
+  "snake.lua",
+  "blob.lua",
 }
 
 local answer
@@ -51,6 +51,6 @@ if answer == "y" then
   shell.execute('mkdir /home/snake')
   for i, demo in ipairs(demos) do
     print(string.format("[OCEngine] %d/%d Downloading file %s", i, #demos, demo))
-    shell.execute(string.format('wget -fq "https://raw.githubusercontent.com/sidneydijkstra/OCEngine/main/demos/%s" "/home/%s"', demo, demo))
+    shell.execute(string.format('wget -fq "https://raw.githubusercontent.com/sidneydijkstra/OCEngine/main/demos/snake/%s" "/home/snake/%s"', demo, demo))
   end
 end
